@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Nikolai Nekrasov">
+    <title> React - Lesson 1 - Task 1</title>
+    <script type="text/javascript">
+        'use strict';
+        let loop = (times = 0, callback = null) => {
+            if (callback) {
+                for (let i = 1; i <= times; i++) {
+                    callback(i);
+                }
+            }
+        };
+        loop(5);
+        loop(8, (i) => console.log('Привет', i)); 
+    </script>
+</head>
+
+<body>
+    <p>Результаты в консоли.</p>
+</body>
+
+</html>
